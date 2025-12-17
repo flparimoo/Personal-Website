@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Adam Parish</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 800px;
+            margin-top: 2rem;
+        }
+
+        .blog-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            transition: opacity 0.2s;
+        }
+
+        .blog-item:hover {
+            opacity: 0.8;
+        }
+
+        .blog-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            min-width: 120px;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+
+    <header>
+        <div class="logo">Adam Parish</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section style="padding-top: 4rem;">
+            <h1 class="animate-in">Thoughts & Notes</h1>
+            <p class="animate-in delay-1" style="color: var(--text-secondary); margin-bottom: 3rem;">
+                Writing about design, technology, and startups.
+            </p>
+
+            <div class="blog-list animate-in delay-2">
+                <a href="#" class="blog-item">
+                    <span class="blog-title">The Future of Design Systems</span>
+                    <span class="blog-date">Oct 12, 2024</span>
+                </a>
+                <a href="#" class="blog-item">
+                    <span class="blog-title">Building Accessible Interfaces</span>
+                    <span class="blog-date">Sep 28, 2024</span>
+                </a>
+                <a href="#" class="blog-item">
+                    <span class="blog-title">Why I Switched to Vanilla CSS</span>
+                    <span class="blog-date">Aug 15, 2024</span>
+                </a>
+                <a href="#" class="blog-item">
+                    <span class="blog-title">Reflections on 5 Years of Product Design</span>
+                    <span class="blog-date">Jul 02, 2024</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Twitter</a> &bull;
+            <a href="#">LinkedIn</a> &bull;
+            <a href="#">GitHub</a>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.5;">&copy; 2024 Adam Parish. Made in Aura.</p>
+    </footer>
+</body>
+
+</html>
